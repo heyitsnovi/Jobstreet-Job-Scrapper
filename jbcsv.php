@@ -11,3 +11,6 @@ $fh = fopen('CSV/'.$_POST['filename'], "w");
 fwrite($fh, $_POST['csv']);
 
 fclose($fh);
+
+//change permission by dev for editing purposes
+chmod('CSV/'.$_POST['filename'], 0777);
