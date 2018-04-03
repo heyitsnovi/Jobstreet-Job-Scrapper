@@ -1,0 +1,9 @@
+Jobstreet Job List Crawler - Scrap data from jobstreet and save it as csv , just enter the jobstreet URL and you're good to go
+
+Requirements:
+
+PHP 5.6 - Latest
+JQuery
+Curl
+
+The CSV Folder must be writtable for Linux / Unix systems
