@@ -28,6 +28,12 @@
 
 			<label> Enter Jobstreet URL</label>
 			<input class="form-control" type="text" name="url" id="url" value="https://www.jobstreet.com.ph/en/job-search/job-vacancy.php?key=nanny&location=&specialization=&area=&salary=&ojs=3&src=12" />
+
+			<label>Crawl Method</label>
+			<select class="form-control" id="crawl_method">
+				<option value="1">CURL Method</option>
+				<option value="2">FILE GET CONTENTS</option>
+			</select>
 			
 
 			<label>Enter Filename:</label>

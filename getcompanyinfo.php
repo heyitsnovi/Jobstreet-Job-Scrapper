@@ -7,6 +7,10 @@
 * By: KelNovi123
 */
 
+$method = $_POST['crawl_method'];
+
+
+     if($method === 1){
 
     // create curl resource
     $ch = curl_init();
@@ -26,3 +30,10 @@
 
     // output the result as json
     echo json_encode(array('company_info'=>$output));
+
+    }else{
+
+        $datastring = file_get_contents($_POST['job_url']);
+
+        echo json_encode(array('company_info'=>$datastring));
+    }

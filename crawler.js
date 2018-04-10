@@ -18,7 +18,8 @@ $(document).ready(function(){
 			url: "curlscrapper.php",
 			type: "POST",
 			data:{
-				url: $('#url').val()
+				url: $('#url').val(),
+				crawl_method: parseInt($('#crawl_method').val())
 			},
 			success:function(r){
 
