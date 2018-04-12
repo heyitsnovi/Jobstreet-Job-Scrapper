@@ -83,7 +83,10 @@ $(document).ready(function(){
 			url : "getfb.php",
 			data:{
 
-				job_url : joburl
+				job_url : joburl,
+				crawl_method: parseInt($('#crawl_method').val())
+
+
 			},
 			type: 'POST',
 			async: false
@@ -110,7 +113,8 @@ $(document).ready(function(){
 			url : "gettw.php",
 			data:{
 
-				job_url : joburl
+				job_url : joburl,
+				crawl_method: parseInt($('#crawl_method').val())
 			},
 			type: 'POST',
 			async: false
@@ -138,7 +142,8 @@ $(document).ready(function(){
 					url : "getjobdesc.php",
 					data:{
 
-						job_url : joburl
+						job_url : joburl,
+						crawl_method: parseInt($('#crawl_method').val())
 					},
 					type: 'POST',
 					async: false
@@ -241,7 +246,8 @@ $(document).ready(function(){
 					url : "getjobdesc.php",
 					data:{
 
-						job_url : joburl
+						job_url : joburl,
+						crawl_method: parseInt($('#crawl_method').val())	
 					},
 					type: 'POST',
 					async: false
@@ -278,7 +284,8 @@ $(document).ready(function(){
 				url : "getjobdesc.php",
 				data:{
 
-					job_url : joburl
+					job_url : joburl,
+					crawl_method: parseInt($('#crawl_method').val())
 				},
 				type: 'POST',
 				async: false
@@ -317,7 +324,8 @@ $(document).ready(function(){
 				url : "getcompanylogo.php",
 				data:{
 
-					job_url : joburl
+					job_url : joburl,
+					crawl_method: parseInt($('#crawl_method').val())
 				},
 				type: 'POST',
 				async: false
@@ -345,7 +353,8 @@ $(document).ready(function(){
 				url : "getcompanyinfo.php",
 				data:{
 
-					job_url : joburl
+				job_url : joburl,
+				crawl_method: parseInt($('#crawl_method').val())
 				},
 				type: 'POST',
 				async: false
